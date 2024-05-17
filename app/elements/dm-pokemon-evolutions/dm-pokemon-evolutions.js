@@ -24,8 +24,7 @@ export class DmPokemonEvolutions extends LitElement {
     this.pokemonEvolutions = [];    
   }
 
-  async _sendData() {
-    console.log('Load data');
+  async _sendData() {    
     this.firePokemonData('pokemons', await this.getPokemonEvolutions());
     this.firePokemonData('count', this.count);
     this.firePokemonData('next', this.next);
